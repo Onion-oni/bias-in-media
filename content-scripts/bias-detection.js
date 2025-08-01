@@ -31,10 +31,10 @@ function gatherPageText() {
 }
 
 // Function to detect bias using the TensorFlow.js model
-function detectBias() {}
+// function detectBias() {}
 
 // Function to highlight biased text based on the results from the model
-function addHighlightWrapToBiasedText() {
+function addHighlightWrapToBiasedText(textNode) {
     const span = document.createElement('span');
     span.className = 'bias-span highlighted';
     span.textContent = textNode.nodeValue;
